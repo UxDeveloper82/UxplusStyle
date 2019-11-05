@@ -1,0 +1,21 @@
+﻿@model UxDesignPlusStyle.Models.MyBlog
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="shadow p-3 mb-5 bg-gray rounded mt-5">
+    <div class="col-lg-8">
+        <h2 class="mt-4">@Model.Title</h2>
+        <p class="lead">
+            "By" @Model.Author
+        </p>
+        <hr id="hr-block" />
+        <p>Posted on @Model.DatePost</p>
+        <hr />
+        <img class="img-fluid rounded" src="~/Content/images/@Model.imageUrl" alt="ultimate-website" />
+    </div>
+    <hr id="hr-block"/>
+    <p class="lead">@Model.Description</p>
+        </div>
+</div>

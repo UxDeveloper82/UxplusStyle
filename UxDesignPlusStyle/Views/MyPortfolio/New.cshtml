@@ -1,0 +1,32 @@
+﻿@model UxDesignPlusStyle.Models.MyPortfolio
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+
+    <h2>New Portfolio Post</h2>
+    @using (Html.BeginForm("Save", "MyPortfolio"))
+    {
+        <div class="form-group">
+            @Html.LabelFor(p => p.Type)
+            @Html.TextBoxFor(p => p.Type, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(p => p.Title)
+            @Html.TextBoxFor(p => p.Title, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(p => p.imageUrl)
+            @Html.TextBoxFor(p => p.imageUrl, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(p => p.Description)
+            @Html.TextAreaFor(p => p.Description, new { @class = "form-control" })
+        </div>
+        @Html.HiddenFor(p=>p.Id)
+        <button type="submit" class="btn btn-primary">Save</button>
+    }
+</div>

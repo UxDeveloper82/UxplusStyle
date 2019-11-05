@@ -1,0 +1,47 @@
+﻿@model UxDesignPlusStyle.Models.Messageme
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_ViewStart.cshtml";
+}
+
+<h2>Index</h2>
+
+<section id="contact" style="background:#161616">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 style="font:400 1.5em;color:white">I WOULD LIKE TO HEAR FROM YOU</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="" method="post">
+                    <div class="row">
+
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="name" id="name" value="name" />
+                        <p class="help-block text-danger"></p>
+
+                        <label for="email">Email Address</label>
+                        <input type="text" class="form-control" placeholder="Email Address" id="email" value="email">
+                        <p class="help-block text-danger"></p>
+
+                        <label for="message">Message</label>
+                        <textarea rows="5" class="form-control" placeholder="Message" id="message">
+							</textarea>
+                        <p class="help-block text-danger"></p>
+
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <input type="Submit" name="Submit" class="btn btn-success btn-lg" value="Send Message" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!--col-lg-12-->
+        </div><!--row-->
+    </div><!--container-->
+</section>

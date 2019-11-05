@@ -1,0 +1,101 @@
+﻿@model IEnumerable<UxDesignPlusStyle.Models.MyBlog>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row">  
+      <div class="col-md-8">
+            @foreach (var myBlog in Model)
+            {
+                <h1 class="card-my-4">
+                    Best Web Development & Programming
+                    <br><small>Blogs for 2019</small>
+                </h1>
+                <br>
+                <div class="card mb-4">
+                    <h2 class="card-title">@myBlog.Title</h2>
+                    <img class="img-responsive" src="~/Content/images/@myBlog.imageUrl" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">@myBlog.DatePost</p>
+                        @Html.ActionLink("Read More", "Details", "MyBlogs", new { id = myBlog.Id }, new { @class = "btn btn-primary btn-outline" })
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on created by
+                        <a href="#">@myBlog.Author</a>
+                    </div>
+
+                </div>
+                <ul class="pagination justify-content-center mb-4">
+                    <li class="page-item">
+                        <a class="page-link" href="#">&larr; Older</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">Newer &rarr;</a>
+                    </li>
+                </ul>
+            }
+            </div>
+           
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Search Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Search</h5>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories Widget -->
+                <div class="card my-4">
+                    <h5 class="card-header">Categories</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HTML</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Freebies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a href="#">JavaScript</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CSS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tutorials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-4">
+                    <h5 class="card-header">Side Widget</h5>
+                    <div class="card-body">
+                        JavaScript is the most popular language above Java, Python, Node.js, Ruby, and more.
+                        JavaScript is the language that browsers use. It's easy to get started with and to understand.
+                        You can get going right away - unlike other languages, you don't have install a bunch of programs
+                        before you can even begin.Sep 14, 2017
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+</div>

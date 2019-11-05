@@ -1,0 +1,30 @@
+﻿@model UxDesignPlusStyle.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+<h2>@Model.Movie.Name</h2>
+@if (Model.Customers.Count == 0)
+{
+   <text>No one has Rented this movie before.</text>
+}
+else
+{
+    <ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>@customer.Name</li>
+    }
+    </ul>
+}
+
+
+
+
+
+
+
+
+
+</div>
