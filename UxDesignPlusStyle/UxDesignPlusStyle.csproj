@@ -47,6 +47,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Browser.Blob, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.Browser.Blob.1.0.0\lib\netstandard2.0\Browser.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="Browser.Dom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.Browser.Dom.1.0.0\lib\netstandard2.0\Browser.Dom.dll</HintPath>
+    </Reference>
+    <Reference Include="Browser.Event, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.Browser.Event.1.0.0\lib\netstandard2.0\Browser.Event.dll</HintPath>
+    </Reference>
+    <Reference Include="Browser.WebStorage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.Browser.WebStorage.1.0.0\lib\netstandard2.0\Browser.WebStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="Fable.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.Core.3.0.0\lib\netstandard2.0\Fable.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fable.FontAwesome, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.FontAwesome.2.0.0\lib\netstandard2.0\Fable.FontAwesome.dll</HintPath>
+    </Reference>
+    <Reference Include="Fable.FontAwesome.Pro, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.FontAwesome.Pro.2.0.0\lib\netstandard2.0\Fable.FontAwesome.Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="Fable.React, Version=5.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fable.React.5.1.0\lib\netstandard2.0\Fable.React.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.4.6.2\lib\net45\FSharp.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -319,6 +346,7 @@
     <Content Include="Content\bootswatch\pulse\bootstrap.min.css" />
     <Content Include="Content\bootswatch\sandstone\bootstrap.css" />
     <Content Include="Content\bootswatch\sandstone\bootstrap.min.css" />
+    <Content Include="Content\images\grid.png" />
     <Content Include="Content\bootswatch\simplex\bootstrap.css" />
     <Content Include="Content\bootswatch\simplex\bootstrap.min.css" />
     <Content Include="Content\bootswatch\sketchy\bootstrap.css" />
@@ -335,6 +363,8 @@
     <Content Include="Content\bootswatch\united\bootstrap.min.css" />
     <Content Include="Content\bootswatch\yeti\bootstrap.css" />
     <Content Include="Content\bootswatch\yeti\bootstrap.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap4.css" />
@@ -494,6 +524,10 @@
     <Content Include="Content\DataTables\swf\flashExport.swf" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fontawesome-all.css" />
+    <Content Include="Content\fontawesome-all.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
     <Content Include="Content\images\apps.png" />
     <Content Include="Content\images\back.png" />
     <Content Include="Content\images\blog1.png" />
@@ -503,6 +537,10 @@
     <Content Include="Content\images\contact-bg.jpg" />
     <Content Include="Content\images\data.png" />
     <Content Include="Content\images\design.png" />
+    <Content Include="Content\images\mobil.jpg" />
+    <Content Include="Content\images\gitfit.png" />
+    <Content Include="Content\images\slider.png" />
+    <Content Include="Content\images\ui.png" />
     <Content Include="Content\images\Startup2-logo_03.png" />
     <Content Include="Content\images\ecommerce.png" />
     <Content Include="Content\images\header-bg.jpg" />
@@ -511,6 +549,14 @@
     <Content Include="Content\images\photography.png" />
     <Content Include="Content\images\user.png" />
     <Content Include="Content\images\websites.png" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
@@ -657,16 +703,30 @@
     <Content Include="Content\bootswatch\cosmo\_bootswatch.scss" />
     <Content Include="Content\bootswatch\cerulean\_variables.scss" />
     <Content Include="Content\bootswatch\cerulean\_bootswatch.scss" />
+    <Content Include="Content\DataTables\css\semanticui.scss" />
+    <Content Include="Content\DataTables\css\mixins.scss" />
+    <Content Include="Content\DataTables\css\common.scss" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\DataTables\css\semanticui.scss" />
-    <Content Include="Content\DataTables\css\mixins.scss" />
-    <Content Include="Content\DataTables\css\common.scss" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\fontawesome\all.js" />
+    <Content Include="Scripts\fontawesome\all.min.js" />
+    <Content Include="Scripts\fontawesome\brands.js" />
+    <Content Include="Scripts\fontawesome\brands.min.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\fontawesome\regular.js" />
+    <Content Include="Scripts\fontawesome\regular.min.js" />
+    <Content Include="Scripts\fontawesome\solid.js" />
+    <Content Include="Scripts\fontawesome\solid.min.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\fontawesome\v4-shims.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -697,8 +757,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -748,6 +806,21 @@
     <Content Include="Views\MyBlogs\New.cshtml" />
     <Content Include="Views\Projects\Budgety.cshtml" />
     <Content Include="Views\Messageme\Index.cshtml" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.eot" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

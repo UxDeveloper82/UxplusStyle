@@ -1,5 +1,4 @@
-﻿
-<div class="navbar navbar-expand-md navbar-dark bg-primary">
+﻿<div class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container">
         @Html.ActionLink("Ux/Design", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,37 +6,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { are = "" }, new { @class = "nav-link" })</li>
-                <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { are = "" }, new { @class = "nav-link" })</li>
                 <li class="nav-item">@Html.ActionLink("My-Portfolio", "Index", "MyPortfolio", new { are = "" }, new { @class = "nav-link" })</li>
-                <li class="nav-item">@Html.ActionLink("My-Blogs", "Index", "MyBlogs", new { are = "" }, new { @class = "nav-link" })</li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My-Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @Html.ActionLink("TodoList", "TodoList", "Projects", new { are = "" }, new { @class = "dropdown-item" })
-                        @Html.ActionLink("BookMarker", "BookMarker", "Projects", new { are = "" }, new { @class = "dropdown-item" })
-                        @Html.ActionLink("Budgety", "Budgety", "Projects", new { are = "" }, new { @class = "dropdown-item" })
-                        <a href="https://uxdeveloper82.github.io/Tasklist-index.html/" class="dropdown-item">Tasklist</a>
-                        <a href="https://uxdeveloper82.github.io/gitFinder-index.html/" class="dropdown-item">GitHubFinder</a>
-                        <a href="https://uxdeveloper82.github.io/fixItApp-index.html/" class="dropdown-item">FitItApp</a>
-                        <a href="https://uxdeveloper82.github.io/navbar-index.html/" class="dropdown-item">Navbar-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/Acme-w3-index.html/" class="dropdown-item">Acme-Template</a>
-                        <a href="https://uxdeveloper82.github.io/Bookmark-index.html/" class="dropdown-item">Bookmark-Template</a>
-                        <a href="https://uxdeveloper82.github.io/demo1-index.html/" class="dropdown-item">Ajax-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/mixStyle-index.html/" class="dropdown-item">Mix-demo</a>
-                        <a href="https://uxdeveloper82.github.io/Grid-index.html/" class="dropdown-item">Grid-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/split-JavaScript-index.html/" class="dropdown-item">Split-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/photography-index.html/" class="dropdown-item">photo-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/oyster-index.html/" class="dropdown-item">oyster-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/Repair-index.html/" class="dropdown-item">Repair-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/split-index.html/" class="dropdown-item">sss-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/camp-index.html/" class="dropdown-item">car-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/tres-index.html/" class="dropdown-item">tres-Demo</a>
-                        <a href="https://uxdeveloper82.github.io/loone-index.html/" class="dropdown-item">loone-Demo</a>
-                    </div>
-                </li>
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
