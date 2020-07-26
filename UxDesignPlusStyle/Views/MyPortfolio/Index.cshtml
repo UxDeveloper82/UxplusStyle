@@ -131,9 +131,33 @@
                     <a href="https://uxdeveloper82.github.io/Acme-w3-index.html/" class="btn btn-primary btn-outline">Details</a>
                 </div>
             </div>
-
+            <div class="ports"></div>
         </div>
     </div>
 </section>
 
+@section scripts {
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "/Data/ports.json",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    render: function (data) {
+                        return " title"
 
+                    }
+
+
+                })
+
+           
+        });
+
+
+      
+            
+    </script>
+
+}
